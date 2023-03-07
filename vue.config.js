@@ -68,6 +68,8 @@ const config = {
 };
 
 if (process.env.NODE_ENV === 'production') {
+  config.configureWebpack.devtool = false;
+
   config.configureWebpack.plugins.push(new BundleAnalyzerPlugin({
     analyzerMode: 'static',
     openAnalyzer: false
