@@ -5,6 +5,7 @@ import i18n, { loadDefaultMessages } from './i18n';
 import CONFIG from './merged-config';
 import getRoutes from "./router";
 import getStore from "./store";
+import "./stac-fields-patches";
 
 import { createBootstrap } from 'bootstrap-vue-next/plugins/createBootstrap';
 import { vBToggle } from 'bootstrap-vue-next/directives/BToggle';
